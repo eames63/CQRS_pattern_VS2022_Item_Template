@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediatR;
 
 namespace ClassTemplates
 {
-	internal class CQRSCommand
-	{
-	}
+	public record CreateCommand() : IRequest<CreateCommandResponse>;
+
 }
