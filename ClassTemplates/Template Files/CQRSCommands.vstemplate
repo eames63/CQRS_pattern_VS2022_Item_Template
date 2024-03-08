@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>CreateCommand.cs</DefaultName>
+    <Name>CQRS Create Commands and Queries</Name>
+    <Description>Create all the required CQRS Command files and folders based on domain entity name - use the domain class name for the file name when creating! Folders will be created for you including the entity name</Description>
+    <ProjectType>CSharp</ProjectType>
+	<ProjectSubType>Code</ProjectSubType>
+	<TemplateID>Microsoft.CSharp.Class</TemplateID>
+    <SortOrder>1</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$Command.cs" ReplaceParameters="true">CreateCommand.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$Command.cs" ReplaceParameters="true">DeleteCommand.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$Command.cs" ReplaceParameters="true">UpdateCommand.cs</ProjectItem>
+	
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$CommandResponse.cs" ReplaceParameters="true">CreateCommandResponse.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$CommandResponse.cs" ReplaceParameters="true">DeleteCommandResponse.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$CommandResponse.cs" ReplaceParameters="true">UpdateCommandResponse.cs</ProjectItem>
+	
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$CommandHandler.cs" ReplaceParameters="true">CreateCommandHandler.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$CommandHandler.cs" ReplaceParameters="true">DeleteCommandHandler.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$CommandHandler.cs" ReplaceParameters="true">UpdateCommandHandler.cs</ProjectItem>
+	
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelsById\Get$fileinputname$ViewModelsByIdQuery.cs" ReplaceParameters="true">GetViewModelsByIdQuery.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelsById\Get$fileinputname$ViewModelsByIdHandler.cs" ReplaceParameters="true">GetViewModelsByIdHandler.cs</ProjectItem>
+	
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Models\$fileinputname$ViewModel.cs" ReplaceParameters="true">CreateModel.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$\Validators\$fileinputname$Validator.cs" ReplaceParameters="true">CreateValidator.cs</ProjectItem>
+	
+  </TemplateContent>
+</VSTemplate>
