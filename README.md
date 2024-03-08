@@ -1,4 +1,4 @@
-# Visual Studio 2022 Item Template to create a CQRS Folder Structure
+# Visual Studio 2022 "Item Template" to create a CQRS Folder Structure in a Project
 
 This VS item template can be used to quickly create the file structure and core class files
 for a CQRS pattern in a .NET 8 project. It has been designed for the MVC view model pattern but is easily adaptible.
@@ -17,7 +17,7 @@ The template:
 4. Assumes that AutoMapper is used to class map between Entities and Models;
 5. Retrieves data from your implemented repository pattern;
 6. Uses Mediatr Nuget package to handle the commands and queries.
-
+7. Uses FluentValidator NuGet package to implement validation rules for ther models and retrun them back to the caller.
 
 ## Using the item template
 The class template files, along with the icon file and .vstemplate file, should be zipped, named and placed inside your VS 2022 item templates default folder.
