@@ -13,12 +13,12 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 {
 	public class Update$fileinputname$CommandHandler: IRequestHandler<Update$fileinputname$Command,Update$fileinputname$CommandResponse>
 {
-	
+
 	private readonly I$fileinputname$Repository _$fileinputname$Repository;
 	private readonly IMapper _mapper;
 	private readonly ILogger<Update$fileinputname$CommandHandler> _logger;
- 
- 
+
+
 	public Update$fileinputname$CommandHandler(IMapper mapper, I$fileinputname$Repository $fileinputname$Repository, ILogger<Update$fileinputname$CommandHandler> logger)
 	{
 		_mapper = mapper;
@@ -38,10 +38,10 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
      {
          update$fileinputname$CommandResponse.Success = false;
          update$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
-         update$fileinputname$CommandResponse.ValidationErrors = new List<string>();
+         update$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
          foreach (var error in validationResult.Errors)
          {
-             update$fileinputname$CommandResponse.ValidationErrors.Add(error.ErrorMessage);
+             update$fileinputname$CommandResponse.ValidationErrors.Add(new ValidationError(error.PropertyName,error.ErrorMessage));
          }
      }
      if (update$fileinputname$CommandResponse.Success)

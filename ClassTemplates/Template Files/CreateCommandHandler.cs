@@ -13,12 +13,12 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
 {
 	public class Create$fileinputname$CommandHandler: IRequestHandler<Create$fileinputname$Command,Create$fileinputname$CommandResponse>
 {
-	
+
 	private readonly I$fileinputname$Repository _$fileinputname$Repository;
 	private readonly IMapper _mapper;
 	private readonly ILogger<Create$fileinputname$CommandHandler> _logger;
- 
- 
+
+
 	public Create$fileinputname$CommandHandler(IMapper mapper, I$fileinputname$Repository $fileinputname$Repository, ILogger<Create$fileinputname$CommandHandler> logger)
 	{
 		_mapper = mapper;
@@ -37,10 +37,10 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
      {
          create$fileinputname$CommandResponse.Success = false;
          create$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
-         create$fileinputname$CommandResponse.ValidationErrors = new List<string>();
+         create$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
          foreach (var error in validationResult.Errors)
          {
-             create$fileinputname$CommandResponse.ValidationErrors.Add(error.ErrorMessage);
+             create$fileinputname$CommandResponse.ValidationErrors.Add(new ValidationError(error.PropertyName,error.ErrorMessage));
          }
      }
      if (create$fileinputname$CommandResponse.Success)

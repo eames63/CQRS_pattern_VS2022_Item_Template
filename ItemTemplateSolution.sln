@@ -9,6 +9,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CQRS Base classes", "CQRS Base classes", "{7F173B52-82D5-40EC-B1FD-543092F417D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions", "Exceptions", "{F5FDB7A2-9F5B-4BB1-9A52-2713ABDDB35F}"
+	ProjectSection(SolutionItems) = preProject
+		BadRequestException.cs = BadRequestException.cs
+		NotFoundException.cs = NotFoundException.cs
+		ValidationException.cs = ValidationException.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Responses", "Responses", "{AC406DF4-843F-4BF9-84FD-7470E79364C1}"
+	ProjectSection(SolutionItems) = preProject
+		BaseResponse.cs = BaseResponse.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F173B52-82D5-40EC-B1FD-543092F417D6} = {4CC36BF5-8D39-4D2E-BC4E-8F79D4E53253}
+		{F5FDB7A2-9F5B-4BB1-9A52-2713ABDDB35F} = {7F173B52-82D5-40EC-B1FD-543092F417D6}
+		{AC406DF4-843F-4BF9-84FD-7470E79364C1} = {7F173B52-82D5-40EC-B1FD-543092F417D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C5F02D8-3892-4219-9F69-DC945FB49C8C}
