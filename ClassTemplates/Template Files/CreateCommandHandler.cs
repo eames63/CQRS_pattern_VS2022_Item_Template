@@ -38,10 +38,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
          create$fileinputname$CommandResponse.Success = false;
          create$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
          create$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
-         foreach (var error in validationResult.Errors)
-         {
-             create$fileinputname$CommandResponse.ValidationErrors.Add(new ValidationError(error.PropertyName,error.ErrorMessage));
-         }
+         create$fileinputname$CommandResponse.ValidationErrors.AddRange(validationResult.Errors.Select(e=> new ValidationError(e.PropertyName,e.ErrorMessage)));
      }
      if (create$fileinputname$CommandResponse.Success)
      {

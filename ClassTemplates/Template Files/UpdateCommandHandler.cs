@@ -39,10 +39,8 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
          update$fileinputname$CommandResponse.Success = false;
          update$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
          update$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
-         foreach (var error in validationResult.Errors)
-         {
-             update$fileinputname$CommandResponse.ValidationErrors.Add(new ValidationError(error.PropertyName,error.ErrorMessage));
-         }
+         update$fileinputname$CommandResponse.ValidationErrors.AddRange(validationResult.Errors.Select(e=> new ValidationError(e.PropertyName,e.ErrorMessage)));
+
      }
      if (update$fileinputname$CommandResponse.Success)
      {
