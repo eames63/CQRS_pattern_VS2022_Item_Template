@@ -37,6 +37,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
      {
          create$fileinputname$CommandResponse.Success = false;
          create$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
+         create$fileinputname$CommandResponse.Alert = NotifyAlert.Warning;
          create$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
          create$fileinputname$CommandResponse.ValidationErrors.AddRange(validationResult.Errors.Select(e=> new ValidationError(e.PropertyName,e.ErrorMessage)));
      }
@@ -50,9 +51,10 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
          model.Id = entity.Id;
          create$fileinputname$CommandResponse.Model=model;
 
-         var msg = $"{Resources.Resources.$fileinputname$} {Resources.Resources.hasBeenAdded}";
+         var msg = $"{Resources.Resources.$fileinputname$}{Resources.Resources.hasBeenAdded}";
          create$fileinputname$CommandResponse.Success = true;
          create$fileinputname$CommandResponse.Message = msg;
+         create$fileinputname$CommandResponse.Alert = NotifyAlert.Success;
          _logger.Log(LogLevel.Information,msg);
 
      }

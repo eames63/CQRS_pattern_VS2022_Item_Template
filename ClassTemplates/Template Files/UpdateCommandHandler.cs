@@ -38,6 +38,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
      {
          update$fileinputname$CommandResponse.Success = false;
          update$fileinputname$CommandResponse.Message = $"{Resources.Resources.DataValidationFailed}";
+         update$fileinputname$CommandResponse.Alert = NotifyAlert.Warning;
          update$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
          update$fileinputname$CommandResponse.ValidationErrors.AddRange(validationResult.Errors.Select(e=> new ValidationError(e.PropertyName,e.ErrorMessage)));
 
@@ -54,10 +55,11 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 		entity.Save();
 
 		model.Id = entity.Id;
-		var msg = $"{Resources.Resources.$fileinputname$} {Resources.Resources.hasBeenUpdated}";
+		var msg = $"{Resources.Resources.$fileinputname$}{Resources.Resources.hasBeenUpdated}";
 		update$fileinputname$CommandResponse.Success = true;
 		update$fileinputname$CommandResponse.Model = model;
 		update$fileinputname$CommandResponse.Message = msg;
+		update$fileinputname$CommandResponse.Alert = NotifyAlert.Success;
 		_logger.Log(LogLevel.Information, msg);
 
      }
