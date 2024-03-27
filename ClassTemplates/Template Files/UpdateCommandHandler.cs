@@ -27,7 +27,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 	}
 
 	 public async Task<Update$fileinputname$CommandResponse> Handle(Update$fileinputname$Command request, CancellationToken cancellationToken)
- {
+	{
      var update$fileinputname$CommandResponse = new Update$fileinputname$CommandResponse();
 	 var model = request.Model;
 
@@ -41,10 +41,9 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
          update$fileinputname$CommandResponse.Alert = NotifyAlert.Warning;
          update$fileinputname$CommandResponse.ValidationErrors = new List<ValidationError>();
          update$fileinputname$CommandResponse.ValidationErrors.AddRange(validationResult.Errors.Select(e=> new ValidationError(e.PropertyName,e.ErrorMessage)));
-
+         return update$fileinputname$CommandResponse;
      }
-     if (update$fileinputname$CommandResponse.Success)
-     {
+
         var entity = _$fileinputname$Repository.LoadById(model.Id);
 		if (entity == null)
 		{
@@ -62,10 +61,10 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 		update$fileinputname$CommandResponse.Alert = NotifyAlert.Success;
 		_logger.Log(LogLevel.Information, msg);
 
-     }
+
 
      return update$fileinputname$CommandResponse;
 
- }
+	}
 }
 }
