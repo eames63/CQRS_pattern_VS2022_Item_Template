@@ -51,7 +51,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
          create$fileinputname$CommandResponse.Model=model;
 
          var msg = $"{Resources.Resources.$fileinputname$} {Resources.Resources.hasBeenAdded}";
-         create$fileinputname$CommandResponse.Success = false;
+         create$fileinputname$CommandResponse.Success = true;
          create$fileinputname$CommandResponse.Message = msg;
          _logger.Log(LogLevel.Information,msg);
 

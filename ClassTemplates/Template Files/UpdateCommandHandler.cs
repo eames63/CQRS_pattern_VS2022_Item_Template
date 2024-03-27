@@ -55,6 +55,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 
 		model.Id = entity.Id;
 		var msg = $"{Resources.Resources.$fileinputname$} {Resources.Resources.hasBeenUpdated}";
+		update$fileinputname$CommandResponse.Success = true;
 		update$fileinputname$CommandResponse.Model = model;
 		update$fileinputname$CommandResponse.Message = msg;
 		_logger.Log(LogLevel.Information, msg);
