@@ -26,7 +26,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Delete
 			var entity =  _$fileinputname$Repository.LoadById(request.Id);
 			if (entity == null)
 			{
-				throw new NotFoundException(nameof(entity), request.Id);
+				throw new NotFoundException(nameof($fileinputname), request.Id);
 			}
 
 			//ToDo complete or delete as needed

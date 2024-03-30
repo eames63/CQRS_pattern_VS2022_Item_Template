@@ -47,7 +47,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
         var entity = _$fileinputname$Repository.LoadById(model.Id);
 		if (entity == null)
 		{
-			throw new NotFoundException(nameof(entity), request.Model.Id);
+			throw new NotFoundException(nameof($fileinputname), request.Model.Id);
 		}
 
 		_mapper.Map(model, entity);
