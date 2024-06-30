@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 
-namespace $rootnamespace$.Queries.Get$fileinputname$ViewModelsById
+namespace $rootnamespace$.$fileinputname$.Queries.Get$fileinputname$ViewModels
 {
 	public class Get$fileinputname$ViewModelsHandler: IRequestHandler<Get$fileinputname$ViewModelsQuery, List<$fileinputname$ViewModel>>
 	{
@@ -26,7 +26,7 @@ namespace $rootnamespace$.Queries.Get$fileinputname$ViewModelsById
 
 	 public async Task<List<$fileinputname$ViewModel>> Handle(Get$fileinputname$ViewModelsQuery request, CancellationToken cancellationToken)
 		{
-			var entities = _$fileinputname$Repository.LoadById(request.Id); //amend repo load method for id owner
+			var entities = _$fileinputname$Repository.LoadAll();
 			if (entities == null)
 			{
 				throw new NotFoundException(nameof($fileinputname$), "NoParams");

@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 
-namespace $rootnamespace$.Queries.Get$fileinputname$ListViewModels
+namespace $rootnamespace$.$fileinputname$.Queries.Get$fileinputname$ListViewModels
 {
 	public class Get$fileinputname$ListViewModelsHandler: IRequestHandler<Get$fileinputname$ListViewModelsQuery, List<$fileinputname$ListViewModel>>
 	{
