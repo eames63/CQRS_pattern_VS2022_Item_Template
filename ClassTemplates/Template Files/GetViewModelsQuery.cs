@@ -6,6 +6,6 @@ using $rootnamespace$.$fileinputname$.Models;
 
 namespace $rootnamespace$.$fileinputname$.Queries.Get$fileinputname$ViewModelsById
 {
-	public record Get$fileinputname$ViewModelsByIdQuery(int Id) : IRequest <List<$fileinputname$ViewModel>>;
+	public record Get$fileinputname$ViewModelsByIdQuery() : IRequest <List<$fileinputname$ViewModel>>;
 	//amend load method for id owner & model type as required
 }

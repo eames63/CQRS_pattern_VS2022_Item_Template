@@ -14,20 +14,29 @@
     <ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$Command.cs" ReplaceParameters="true">CreateCommand.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$Command.cs" ReplaceParameters="true">DeleteCommand.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$Command.cs" ReplaceParameters="true">UpdateCommand.cs</ProjectItem>
-	
+
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$CommandResponse.cs" ReplaceParameters="true">CreateCommandResponse.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$CommandResponse.cs" ReplaceParameters="true">DeleteCommandResponse.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$CommandResponse.cs" ReplaceParameters="true">UpdateCommandResponse.cs</ProjectItem>
-	
+
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Create\Create$fileinputname$CommandHandler.cs" ReplaceParameters="true">CreateCommandHandler.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Delete\Delete$fileinputname$CommandHandler.cs" ReplaceParameters="true">DeleteCommandHandler.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Command\Update\Update$fileinputname$CommandHandler.cs" ReplaceParameters="true">UpdateCommandHandler.cs</ProjectItem>
-	
-	<ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelsById\Get$fileinputname$ViewModelsByIdQuery.cs" ReplaceParameters="true">GetViewModelsByIdQuery.cs</ProjectItem>
-	<ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelsById\Get$fileinputname$ViewModelsByIdHandler.cs" ReplaceParameters="true">GetViewModelsByIdHandler.cs</ProjectItem>
-	
+
+   <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelById\Get$fileinputname$ViewModelByIdQuery.cs" ReplaceParameters="true">GetViewModelByIdQuery.cs</ProjectItem>
+   <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModelById\Get$fileinputname$ViewModelByIdHandler.cs" ReplaceParameters="true">GetViewModelByIdHandler.cs</ProjectItem>
+
+   <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModels\Get$fileinputname$ViewModelsQuery.cs" ReplaceParameters="true">GetViewModelsQuery.cs</ProjectItem>
+	 <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$ViewModels\Get$fileinputname$ViewModelsHandler.cs" ReplaceParameters="true">GetViewModelsHandler.cs</ProjectItem>
+
+  <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$LookupViewModels\Get$fileinputname$LookupViewModelsQuery.cs" ReplaceParameters="true">GetLookupViewModelsQuery.cs</ProjectItem>
+  <ProjectItem SubType="" TargetFileName="$fileinputname$\Queries\Get$fileinputname$LookupViewModels\Get$fileinputname$LookupViewModelsHandler.cs" ReplaceParameters="true">GetLookupViewModelsHandler.cs</ProjectItem>
+
+
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Models\$fileinputname$ViewModel.cs" ReplaceParameters="true">CreateModel.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$\Models\$fileinputname$LookupViewModel.cs" ReplaceParameters="true">CreateLookupModel.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$\Models\$fileinputname$ListViewModel.cs" ReplaceParameters="true">CreateListModel.cs</ProjectItem>
 	<ProjectItem SubType="" TargetFileName="$fileinputname$\Validators\$fileinputname$Validator.cs" ReplaceParameters="true">CreateValidator.cs</ProjectItem>
-	
+
   </TemplateContent>
 </VSTemplate>

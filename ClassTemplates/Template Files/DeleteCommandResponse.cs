@@ -1,4 +1,4 @@
-﻿
+﻿using Hub.Application.Responses;
 namespace $rootnamespace$.$fileinputname$.Command.Delete
 {
 	public class Delete$fileinputname$CommandResponse: BaseResponse
@@ -8,5 +8,5 @@ namespace $rootnamespace$.$fileinputname$.Command.Delete
 
 	}
 }
-	
+
 }
