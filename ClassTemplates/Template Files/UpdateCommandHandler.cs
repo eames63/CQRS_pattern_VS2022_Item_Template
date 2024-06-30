@@ -53,7 +53,7 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 		_mapper.Map(model, entity);
 		entity.Save();
 
-		model.Id = entity.Id;
+
 		var msg = $"{Resources.Resources.$fileinputname$}{Resources.Resources.hasBeenUpdated}";
 		update$fileinputname$CommandResponse.Success = true;
 		update$fileinputname$CommandResponse.Model = model;
