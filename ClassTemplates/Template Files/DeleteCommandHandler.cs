@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 
 namespace $rootnamespace$.$fileinputname$.Command.Delete
-{
+
 	public class Delete$fileinputname$CommandHandler: IRequestHandler<Delete$fileinputname$Command,Delete$fileinputname$CommandResponse>
 {
 	private readonly I$fileinputname$Repository _$fileinputname$Repository;
@@ -52,4 +52,4 @@ namespace $rootnamespace$.$fileinputname$.Command.Delete
 
  }
 }
-}
+

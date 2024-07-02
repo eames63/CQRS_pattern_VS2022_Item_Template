@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using MediatR;
@@ -10,7 +9,7 @@ using $rootnamespace$.$fileinputname$.Models;
 using $rootnamespace$.$fileinputname$.Validators;
 
 namespace $rootnamespace$.$fileinputname$.Command.Update
-{
+
 	public class Update$fileinputname$CommandHandler: IRequestHandler<Update$fileinputname$Command,Update$fileinputname$CommandResponse>
 {
 
@@ -67,4 +66,4 @@ namespace $rootnamespace$.$fileinputname$.Command.Update
 
 	}
 }
-}
+

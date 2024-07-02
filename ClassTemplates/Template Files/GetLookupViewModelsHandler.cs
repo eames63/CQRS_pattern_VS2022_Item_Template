@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using MediatR;
@@ -9,7 +8,7 @@ using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 
 namespace $rootnamespace$.$fileinputname$.Queries.Get$fileinputname$LookupViewModels
-{
+
 	public class Get$fileinputname$LookupViewModelsHandler: IRequestHandler<Get$fileinputname$LookupViewModelsQuery, List<$fileinputname$LookupViewModel>>
 	{
 
@@ -39,4 +38,4 @@ namespace $rootnamespace$.$fileinputname$.Queries.Get$fileinputname$LookupViewMo
 		}
 	}
 
-}
+

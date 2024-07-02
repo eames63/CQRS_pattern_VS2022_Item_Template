@@ -10,7 +10,7 @@ using $rootnamespace$.$fileinputname$.Models;
 using $rootnamespace$.$fileinputname$.Validators;
 
 namespace $rootnamespace$.$fileinputname$.Command.Create
-{
+
 public class Create$fileinputname$CommandHandler: IRequestHandler<Create$fileinputname$Command,Create$fileinputname$CommandResponse>
 {
 
@@ -61,4 +61,4 @@ public Create$fileinputname$CommandHandler(IMapper mapper, I$fileinputname$Repos
 
  }
 }
-}
+

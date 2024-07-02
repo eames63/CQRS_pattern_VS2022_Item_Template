@@ -6,7 +6,7 @@ using $rootnamespace$.$fileinputname$.Models;
 using Hub.Application.Responses;
 
 namespace $rootnamespace$.$fileinputname$.Command.Create
-{
+
 	public class Create$fileinputname$CommandResponse: BaseResponse
 {
 	public Create$fileinputname$CommandResponse():base()
@@ -16,4 +16,4 @@ namespace $rootnamespace$.$fileinputname$.Command.Create
 
 	public $fileinputname$ViewModel Model { get; set; } = default!;
 }
-}
+
