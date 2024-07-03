@@ -3,7 +3,7 @@ using $rootnamespace$.$fileinputname$.Models;
 using Hub.Application.Responses;
 
 
-namespace $rootnamespace$.$fileinputname$.Command.Update
+namespace $rootnamespace$.$fileinputname$.Command
 
 	public class Update$fileinputname$CommandResponse: BaseResponse
 	{

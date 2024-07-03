@@ -1,5 +1,5 @@
 ﻿using Hub.Application.Responses;
-namespace $rootnamespace$.$fileinputname$.Command.Delete
+namespace $rootnamespace$.$fileinputname$.Command
 
 	public class Delete$fileinputname$CommandResponse: BaseResponse
 {
