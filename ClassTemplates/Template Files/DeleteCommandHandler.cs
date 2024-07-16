@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 
 
-namespace $rootnamespace$.$fileinputname$.Command
+namespace $rootnamespace$.$fileinputname$.Command;
 
 	public class Delete$fileinputname$CommandHandler: IRequestHandler<Delete$fileinputname$Command,Delete$fileinputname$CommandResponse>
 {

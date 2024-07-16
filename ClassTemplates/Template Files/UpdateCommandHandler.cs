@@ -8,7 +8,7 @@ using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 using $rootnamespace$.$fileinputname$.Validators;
 
-namespace $rootnamespace$.$fileinputname$.Command
+namespace $rootnamespace$.$fileinputname$.Command;
 
 	public class Update$fileinputname$CommandHandler: IRequestHandler<Update$fileinputname$Command,Update$fileinputname$CommandResponse>
 {

@@ -9,7 +9,7 @@ using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 using $rootnamespace$.$fileinputname$.Validators;
 
-namespace $rootnamespace$.$fileinputname$.Command
+namespace $rootnamespace$.$fileinputname$.Command;
 
 public class Create$fileinputname$CommandHandler: IRequestHandler<Create$fileinputname$Command,Create$fileinputname$CommandResponse>
 {
