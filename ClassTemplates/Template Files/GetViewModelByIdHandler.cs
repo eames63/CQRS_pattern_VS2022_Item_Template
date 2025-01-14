@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using AutoMapper;
 using $rootnamespace$.$fileinputname$.Models;
 
-namespace $rootnamespace$.$fileinputname$.Queries
+namespace $rootnamespace$.$fileinputname$.Queries;
 
 	public class Get$fileinputname$ViewModelByIdHandler: IRequestHandler<Get$fileinputname$ViewModelByIdQuery, $fileinputname$ViewModel>
 	{
@@ -17,7 +17,7 @@ namespace $rootnamespace$.$fileinputname$.Queries
 
 
 
-	public Get$fileinputname$ViewModelsByIdHandler(I$fileinputname$Repository $fileinputname$Repository, IMapper mapper)
+	public Get$fileinputname$ViewModelByIdHandler(I$fileinputname$Repository $fileinputname$Repository, IMapper mapper)
 	{
 		_mapper = mapper;
 		_$fileinputname$Repository = $fileinputname$Repository;
